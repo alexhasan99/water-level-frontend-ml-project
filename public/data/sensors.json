@@ -94,7 +94,7 @@
     "longitude": 13.6000,
     "summary": "Vombsjön övre",
     "href": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/2018.json",
-    "csvPath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/predictions/predictions_vombsjom_ovre_2018.csv",
-    "evalImagePath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/images/actual_vs_predicted_vombsjom_ovre_2018.png"
+    "csvPath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/predictions/predictions_vombsjon_ovre_2018.csv",
+    "evalImagePath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/images/actual_vs_predicted_vombsjon_ovre_2018.png"
   }
 }
