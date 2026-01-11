@@ -1,0 +1,42 @@
+{
+  "malaren_w": {
+    "name": "MÄLAREN W",
+    "station_id": 20389,
+    "latitude": 59.3284,
+    "longitude": 18.0664,
+    "summary": "Latitud: 59.3284 Longitud: 18.0664",
+    "href": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/20389.json",
+    "periods": {
+      "latest-day": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/20389/period/latest-day.json",
+      "corrected-archive": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/20389/period/corrected-archive.json"
+    },
+    "csvPath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/predictions/predictions_malaren_w_20389.csv",
+    "evalImagePath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/images/actual_vs_predicted_malaren_w_20389.png"
+
+  },
+
+  "hjalmaren_w": {
+    "name": "HJÄLMAREN W",
+    "station_id": 20380,
+    "latitude": 59.2716,
+    "longitude": 16.2936,
+    "summary": "Latitud: 59.2716 Longitud: 16.2936",
+    "href": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/20380.json",
+    "periods": {
+      "corrected-archive": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/20380/period/corrected-archive.json"
+    },
+    "csvPath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/predictions/predictions_hjalmaren_w_20380.csv",
+    "evalImagePath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/images/actual_vs_predicted_hjalmaren_w_20380.png"
+  },
+
+  "storsjon_jamtland": {
+    "name": "STORSJÖN JÄMTLAND",
+    "station_id": 20048,
+    "latitude": 63.2983,
+    "longitude": 14.4601,
+    "summary": "Latitud: 63.2983 Longitud: 14.4601",
+    "href": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/20048.json",
+    "csvPath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/predictions/predictions_storsjon_jamtland_20048.csv",
+    "evalImagePath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/images/actual_vs_predicted_storsjon_jamtland_20048.png"
+  }
+}
