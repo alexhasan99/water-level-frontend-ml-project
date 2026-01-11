@@ -1,18 +1,24 @@
 {
-  "malaren_w": {
-    "name": "MÄLAREN W",
-    "station_id": 20389,
-    "latitude": 59.3284,
-    "longitude": 18.0664,
-    "summary": "Latitud: 59.3284 Longitud: 18.0664",
-    "href": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/20389.json",
-    "periods": {
-      "latest-day": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/20389/period/latest-day.json",
-      "corrected-archive": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/20389/period/corrected-archive.json"
-    },
-    "csvPath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/predictions/predictions_malaren_w_20389.csv",
-    "evalImagePath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/images/actual_vs_predicted_malaren_w_20389.png"
+  "byviksbanken": {
+    "name": "BYVIKSBANKEN",
+    "station_id": 1906,
+    "latitude": 58.9500,
+    "longitude": 17.9000,
+    "summary": "Station Byviksbanken",
+    "href": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/1906.json",
+    "csvPath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/predictions/predictions_byrviksbanken_1906.csv",
+    "evalImagePath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/images/actual_vs_predicted_byviksbanken_1906.png"
+  },
 
+  "fageludden": {
+    "name": "FÅGELUDDEN",
+    "station_id": 2455,
+    "latitude": 59.4000,
+    "longitude": 17.8000,
+    "summary": "Station Fågeludden",
+    "href": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/2455.json",
+    "csvPath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/predictions/predictions_fageludden_2455.csv",
+    "evalImagePath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/images/actual_vs_predicted_fageludden_2455.png"
   },
 
   "hjalmaren_w": {
@@ -20,13 +26,43 @@
     "station_id": 20380,
     "latitude": 59.2716,
     "longitude": 16.2936,
-    "summary": "Latitud: 59.2716 Longitud: 16.2936",
+    "summary": "Hjälmaren vattennivå",
     "href": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/20380.json",
-    "periods": {
-      "corrected-archive": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/20380/period/corrected-archive.json"
-    },
     "csvPath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/predictions/predictions_hjalmaren_w_20380.csv",
     "evalImagePath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/images/actual_vs_predicted_hjalmaren_w_20380.png"
+  },
+
+  "malaren_w": {
+    "name": "MÄLAREN W",
+    "station_id": 20389,
+    "latitude": 59.3284,
+    "longitude": 18.0664,
+    "summary": "Mälaren vattennivå",
+    "href": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/20389.json",
+    "csvPath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/predictions/predictions_malaren_w_20389.csv",
+    "evalImagePath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/images/actual_vs_predicted_malaren_w_20389.png"
+  },
+
+  "motala": {
+    "name": "MOTALA STRÖM",
+    "station_id": 154,
+    "latitude": 58.5370,
+    "longitude": 15.0360,
+    "summary": "Motala ström",
+    "href": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/154.json",
+    "csvPath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/predictions/predictions_motala_154.csv",
+    "evalImagePath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/images/actual_vs_predicted_motala_154.png"
+  },
+
+  "ringsjodammen_ovre": {
+    "name": "RINGSJÖDAMMEN ÖVRE",
+    "station_id": 2176,
+    "latitude": 55.9000,
+    "longitude": 13.6000,
+    "summary": "Ringsjödämmen övre",
+    "href": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/2176.json",
+    "csvPath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/predictions/predictions_ringsjodammen_ovre_2176.csv",
+    "evalImagePath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/images/actual_vs_predicted_ringsjodammen_ovre_2176.png"
   },
 
   "storsjon_jamtland": {
@@ -34,9 +70,31 @@
     "station_id": 20048,
     "latitude": 63.2983,
     "longitude": 14.4601,
-    "summary": "Latitud: 63.2983 Longitud: 14.4601",
+    "summary": "Storsjön i Jämtland",
     "href": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/20048.json",
     "csvPath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/predictions/predictions_storsjon_jamtland_20048.csv",
     "evalImagePath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/images/actual_vs_predicted_storsjon_jamtland_20048.png"
+  },
+
+  "vanern": {
+    "name": "VÄNERN",
+    "station_id": 20059,
+    "latitude": 58.9000,
+    "longitude": 13.5000,
+    "summary": "Vänern vattennivå",
+    "href": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/20059.json",
+    "csvPath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/predictions/predictions_vanern_20059.csv",
+    "evalImagePath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/images/actual_vs_predicted_vanern_20059.png"
+  },
+
+  "vombsjom_ovre": {
+    "name": "VOMBSJÖN ÖVRE",
+    "station_id": 2018,
+    "latitude": 55.7000,
+    "longitude": 13.6000,
+    "summary": "Vombsjön övre",
+    "href": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/2018.json",
+    "csvPath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/predictions/predictions_vombsjom_ovre_2018.csv",
+    "evalImagePath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/images/actual_vs_predicted_vombsjom_ovre_2018.png"
   }
 }
