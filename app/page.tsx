@@ -69,8 +69,8 @@ export default function Page() {
               Hydrology ML Dashboard
             </h1>
             <p className="mt-2 max-w-2xl text-sm md:text-base text-white/70">
-              Interaktiv karta med stationer. Klicka på en sensor för att se dagliga prognoser och
-              jämförelse mellan prediktion och observationer.
+              Interactive map with monitoring stations. Click on a sensor to view
+              daily forecasts and compare model predictions with observed data.
             </p>
           </div>
 
@@ -80,7 +80,7 @@ export default function Page() {
               <div className="text-lg font-semibold">{sensors.length}</div>
             </div>
             <div className="rounded-xl bg-white/10 px-4 py-3">
-              <div className="text-xs text-white/60">Update</div>
+              <div className="text-xs text-white/60">Update interval</div>
               <div className="text-lg font-semibold">4h</div>
             </div>
           </div>
@@ -96,11 +96,11 @@ export default function Page() {
             <div className="flex items-center justify-between mb-3">
               <div>
                 <div className="text-sm font-semibold">Map</div>
-                <div className="text-xs text-white/60">Sverige • stationer</div>
+                <div className="text-xs text-white/60">Sweden • monitoring stations</div>
               </div>
 
               <div className="rounded-full bg-white/10 px-3 py-1 text-xs text-white/70">
-                Klicka på en punkt
+                Click on a point
               </div>
             </div>
             <SwedenMap sensors={sensors} onSelect={onSelectSensor} />
@@ -112,7 +112,8 @@ export default function Page() {
               <div className="text-white/70">
                 <div className="text-sm font-semibold text-white">Sensor details</div>
                 <p className="mt-2 text-sm text-white/60">
-                  Välj en station på kartan för att se summary, CSV och utvärderingsgraf.
+                  Select a station on the map to view summary information,
+                  prediction data, and evaluation plots.
                 </p>
               </div>
             ) : (
@@ -122,7 +123,10 @@ export default function Page() {
                     <div className="text-sm text-white/60">Selected sensor</div>
                     <h2 className="mt-1 text-xl font-semibold">{selected.name}</h2>
                     <div className="mt-2 text-sm text-white/70">
-                      Station ID: <span className="font-medium text-white">{selected.station_id}</span>
+                      Station ID:{" "}
+                      <span className="font-medium text-white">
+                        {selected.station_id}
+                      </span>
                     </div>
                   </div>
 
@@ -138,8 +142,6 @@ export default function Page() {
                       {selected.summary ?? "No summary available."}
                     </div>
                   </div>
-
-
                 </div>
               </>
             )}
@@ -161,17 +163,20 @@ export default function Page() {
             <div className="flex gap-2">
               {pred ? (
                 <span className="rounded-full bg-white/10 px-3 py-1 text-xs text-white/70">
-                  points: <span className="text-white font-medium">{pred.length}</span>
+                  Points:{" "}
+                  <span className="text-white font-medium">{pred.length}</span>
                 </span>
               ) : null}
               <span className="rounded-full bg-white/10 px-3 py-1 text-xs text-white/70">
-                refresh: 4h
+                Refresh: 4h
               </span>
             </div>
           </div>
 
           {!selected ? (
-            <div className="mt-4 text-white/70">Välj en sensor för att visa grafen.</div>
+            <div className="mt-4 text-white/70">
+              Select a sensor to display the forecast chart.
+            </div>
           ) : loadingPred ? (
             <div className="mt-4 text-white/70">Loading CSV…</div>
           ) : predError ? (
@@ -184,9 +189,9 @@ export default function Page() {
               <div className="mt-6 rounded-xl2 bg-white/5 p-5 shadow-soft border border-white/10">
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   Actual vs Predicted
-                  </div>
+                </div>
                 <div className="text-sm font-semibold">
-                  Modellens prediktion jämfört med verkliga observationer.
+                  Model predictions compared with observed water levels.
                 </div>
 
                 {selectedImageUrl ? (
@@ -200,7 +205,7 @@ export default function Page() {
                   </div>
                 ) : (
                   <div className="mt-3 text-sm text-slate-600">
-                    No evaluation image for this sensor.
+                    No evaluation image available for this sensor.
                   </div>
                 )}
               </div>
@@ -212,7 +217,8 @@ export default function Page() {
 
         {/* Footer note */}
         <div className="mt-8 text-xs text-white/50">
-          Data sources: SMHI observations + model predictions (GitHub artifacts). UI refresh uses a 4h cache bucket.
+          Data sources: SMHI observations and model predictions (GitHub artifacts).
+          The UI refreshes data using a 4-hour cache window.
         </div>
       </section>
     </main>
