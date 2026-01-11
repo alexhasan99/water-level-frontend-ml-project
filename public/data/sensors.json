@@ -7,7 +7,7 @@
     "summary": "Station Byviksbanken",
     "href": "https://opendata-download-hydroobs.smhi.se/api/version/1.0/parameter/3/station/1906.json",
     "csvPath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/predictions/predictions_byrviksbanken_1906.csv",
-    "evalImagePath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/images/actual_vs_predicted_byviksbanken_1906.png"
+    "evalImagePath": "https://raw.githubusercontent.com/shvaikop/scalable_ml_project/master/artifacts/images/actual_vs_predicted_byrviksbanken_1906.png"
   },
 
   "fageludden": {

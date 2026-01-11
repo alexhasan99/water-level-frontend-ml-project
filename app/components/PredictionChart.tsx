@@ -39,17 +39,43 @@ export default function PredictionChart({ data }: Props) {
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={rows} margin={{ top: 12, right: 16, left: 0, bottom: 28 }}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis
-            dataKey="date"
-            type="category"
-            interval={2} // 👈 visa varje dag (alla ticks)
-            tick={{ fontSize: 11 }}
-            angle={-35}
-            textAnchor="end"
-            height={60}
-          />
-          <YAxis tick={{ fontSize: 12 }} />
-          <Tooltip
+            <XAxis
+              dataKey="date"
+              type="category"
+              interval={1}
+              tick={{ fontSize: 11 }}
+              angle={-35}
+              textAnchor="end"
+              height={70}
+              label={{
+                value: "Date",
+                position: "insideBottom",
+                offset: -10,
+                style: {
+                  fontSize: 12,
+                  fill: "#334155", // slate-700
+                  fontWeight: 500,
+                },
+              }}
+            />
+
+            <YAxis
+              domain={[(dataMin: number) => dataMin - 5, "auto"]}
+              tick={{ fontSize: 12 }}
+              label={{
+                value: "Water level (cm)",
+                angle: -90,
+                position: "insideLeft",
+                offset: 10,          // 👈 större värde = längre ned
+                style: {
+                  fontSize: 13,
+                  fill: "#334155",   // slate-700
+                  fontWeight: 500,
+                },
+                dy: 40,
+              }}
+            />
+            <Tooltip
             labelFormatter={(label) => `Date: ${label}`}
             formatter={(v) => [Number(v).toFixed(2), "Water level (cm)"]}
           />
