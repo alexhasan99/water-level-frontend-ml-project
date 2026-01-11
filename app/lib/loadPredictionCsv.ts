@@ -11,7 +11,7 @@ export type PredictionPoint = {
 
 type RawRow = {
   date?: string;
-  water_level_cm?: string;
+  water_level_cm_pred?: string;
 };
 
 function fourHourBucket(): number {
@@ -41,11 +41,11 @@ export async function loadPredictionCsv(csvPath: string): Promise<PredictionPoin
 
   const points: PredictionPoint[] = parsed.data
     .map((r) => {
-      if (!r.date || r.water_level_cm == null) return null;
+      if (!r.date || r.water_level_cm_pred == null) return null;
 
       // date: "YYYY-MM-DD"
       const t = new Date(r.date);
-      const y = Number(r.water_level_cm);
+      const y = Number(r.water_level_cm_pred);
 
       if (Number.isNaN(t.getTime()) || Number.isNaN(y)) return null;
       return { t, y };
